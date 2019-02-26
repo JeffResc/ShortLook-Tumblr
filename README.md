@@ -1,4 +1,5 @@
 # Tumblr Photo Provider for ShortLook
+[![Build Status](https://travis-ci.org/JeffResc/ShortLook-Tumblr.svg?branch=master)](https://travis-ci.org/JeffResc/ShortLook-Tumblr)
 
 ![Tumblr for ShortLook](https://repo.dynastic.co/data/static/version/152314741451128832/152314875949875200)
 
