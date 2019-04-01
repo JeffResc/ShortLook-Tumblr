@@ -7,8 +7,9 @@
 - (DDNotificationContactPhotoPromiseOffer *)contactPhotoPromiseOfferForNotification:(DDUserNotification *)notification {
     NSError* error;
     NSDictionary* json = [NSJSONSerialization JSONObjectWithData:[[notification.applicationUserInfo valueForKeyPath:@"message"] dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
-    if(error) { return nil; }
+    if (!json || error) { return nil; }
     NSString *photoURLStr = json[@"icon"];
+    if (!photoURLStr) return nil;
     NSURL *photoURL = [NSURL URLWithString:photoURLStr];
     if (!photoURL) return nil;
     return [NSClassFromString(@"DDNotificationContactPhotoPromiseOffer") offerDownloadingPromiseWithPhotoIdentifier:photoURLStr fromURL:photoURL];
