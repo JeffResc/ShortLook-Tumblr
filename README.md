@@ -8,3 +8,9 @@ Show Tumblr users' profile pictures in ShortLook when you receive a Tumblr notif
 (This is not ShortLook itself, but a plugin for it)
 
 You can download this Contact Photo Provider for ShortLook from the [Dynastic Repo](https://repo.dynastic.co/package/com.jeffresc.shortlook.plugin.contact-photo.tumblr).
+
+#Changelog
+## v1.0
+Initial Release
+## v1.0.1
+Fixed issue where some users would experience random crashes when receiving Tumblr notifications
